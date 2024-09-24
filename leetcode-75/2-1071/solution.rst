@@ -1,4 +1,4 @@
-HOW TO SOLVED
+HOW IT SOLVED
 -------------
 
 1. get the length of each string(src -> shorter one, dest -> longer one)
