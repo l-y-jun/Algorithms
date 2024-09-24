@@ -7,6 +7,10 @@ TODO Algorithms
 | Hope to be last longer as i can and,
 | also try to solve with adapting computer science concepts and mathematical basis.
 
+.. important::
+
+   KEEP FOLLOW THE GROUND RULE procedure.
+
 Chapters
 --------
 
