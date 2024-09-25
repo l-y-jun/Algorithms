@@ -32,10 +32,11 @@ int removeDuplicates(int *nums, int numsSize)
 	tail = cur + numsSize - 1;
 	printf("CUR: %d TAIL:%d\n", *cur, *tail);
 	while (cur < tail) {
-		if ((dupcnt = countDuplicates(cur, tail))) {
+		if ((dupcnt = countDuplicates(cur, tail)) && dupcnt > 1) {
 			printf("DUPS: %d\n", dupcnt);
-			copy(cur + 1, cur + 1 + dupcnt, tail);
-			tail -= dupcnt;
+			copy(cur + 2, cur + 2 + dupcnt - 1, tail);
+			tail -= (dupcnt - 1);
+			cur++;
 		}
 		cur++;
 	}
@@ -52,13 +53,13 @@ void copy(int *dest, int *src, int *end)
 int main(void)
 {
 	int nums1[] = {1,1,1};
-	int ret1 = 1;
-	int expected1[] = {1};
+	int ret1 = 2;
+	int expected1[] = {1, 1};
 	test(nums1, 3, ret1, expected1);
 
 	int nums2[] = {0,0,1};
-	int ret2 = 2;
-	int expected2[] = {0,1};
+	int ret2 = 3;
+	int expected2[] = {0,0,1};
 	test(nums2, 3, ret2, expected2);
 
 }
