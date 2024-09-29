@@ -1,7 +1,7 @@
 HOW IT SOLVED
 -------------
 
-1. clean string(duplicate blank space)
-#. reverse full string
+1. clean string(duplicate blank space)/O(n)
+#. reverse full string/O(n)
 #. while getNextWord
-#. reverse word
+#. reverse word/O(n)
